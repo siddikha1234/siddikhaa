@@ -1,0 +1,221 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">My Portfolio</div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h1>About Me</h1>
+            <p>Hello! I'm a web developer with a passion for creating beautiful and functional websites. Welcome to my portfolio!</p>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project-grid">
+                <div class="project">
+                    <img src="project1.jpg" alt="Project 1">
+                    <h3>Project 1</h3>
+                    <p>Short description of Project 1.</p>
+                </div>
+                <div class="project">
+                    <img src="project2.jpg" alt="Project 2">
+                    <h3>Project 2</h3>
+                    <p>Short description of Project 2.</p>
+                </div>
+                <div class="project">
+                    <img src="project3.jpg" alt="Project 3">
+                    <h3>Project 3</h3>
+                    <p>Short description of Project 3.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2>Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h3>Job Title at Company</h3>
+                    <p>Duration</p>
+                    <p>Brief description of the role and responsibilities.</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>Job Title at Company</h3>
+                    <p>Duration</p>
+                    <p>Brief description of the role and responsibilities.</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>Job Title at Company</h3>
+                    <p>Duration</p>
+                    <p>Brief description of the role and responsibilities.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:email@example.com">email@example.com</a></p>
+            <p>Phone: +1 234 567 890</p>
+            <div class="social-media">
+                <a href="#"><img src="icon-facebook.svg" alt="Facebook"></a>
+                <a href="#"><img src="icon-twitter.svg" alt="Twitter"></a>
+                <a href="#"><img src="icon-linkedin.svg" alt="LinkedIn"></a>
+                <a href="#"><img src="icon-github.svg" alt="GitHub"></a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
+
+
+### CSS (styles.css)
+css
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.about, .projects, .experience, .contact {
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.project-grid {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.project {
+    background: #f4f4f4;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    max-width: 30%;
+}
+
+.project img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+}
+
+.timeline-item {
+    background: #f4f4f4;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    max-width: 600px;
+    width: 100%;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.social-media a img {
+    width: 32px;
+    height: 32px;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .project {
+        max-width: 100%;
+    }
+}
+
+
+### Explanation
+
+1. *HTML Structure:*
+   - The header contains navigation links.
+   - Sections for About, Projects, Experience, and Contact.
+   - Footer with copyright information.
+
+2. *CSS Styling:*
+   - Basic styling for body, container, header, and sections.
+   - Flexbox for layout alignment in the header and project grid.
+   - Responsive design using media queries for better display on smaller screens.
+
+### Icons and Images:
+- *Images:* Use placeholder images or your project images.
+- *Icons:* Use free icon sets like FontAwesome or SVG icons for social media.
+
+### Making it Responsive:
+- The CSS includes media queries to adjust the layout for smaller screens.
+- Flexbox is used to make layouts flexible and responsive.
+
+By following this structure and style, you’ll have a clean and responsive portfolio website that effectively showcases your work and experience.
